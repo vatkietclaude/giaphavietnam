@@ -205,8 +205,7 @@ class _StatsSection extends StatelessWidget {
                       child: LinearProgressIndicator(
                         value: entry.value / maxCount,
                         minHeight: 14,
-                        semanticsLabel: 'Đời ${entry.key}',
-                        semanticsValue: '${entry.value} người',
+                        semanticsLabel: 'Đời ${entry.key}: ${entry.value} người',
                       ),
                     ),
                   ),

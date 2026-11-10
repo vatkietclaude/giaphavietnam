@@ -317,11 +317,13 @@ class _PersonNode extends StatelessWidget {
                     ],
                   ),
                   const SizedBox(height: 2),
-                  Text(
-                    person.fullName,
-                    maxLines: 2,
-                    overflow: TextOverflow.ellipsis,
-                    style: theme.textTheme.bodyMedium?.copyWith(fontWeight: FontWeight.w600, height: 1.15),
+                  Flexible(
+                    child: Text(
+                      person.fullName,
+                      maxLines: 2,
+                      overflow: TextOverflow.ellipsis,
+                      style: theme.textTheme.bodyMedium?.copyWith(fontWeight: FontWeight.w600, height: 1.15),
+                    ),
                   ),
                   if (person.lifeSpan.isNotEmpty)
                     Text(
